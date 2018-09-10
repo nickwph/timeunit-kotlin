@@ -1,0 +1,18 @@
+apply plugin: "kotlin"
+
+ext.artifactId = 'timeunit'
+group 'com.nicholasworkshop'
+version '1.0.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile "org.jetbrains.kotlin:kotlin-stdlib"
+    testCompile "org.assertj:assertj-core:3.11.1"
+    testCompile "org.mockito:mockito-core:2.+"
+    testCompile "com.github.javafaker:javafaker:0.13"
+    testCompile "org.junit.jupiter:junit-jupiter-api:${junitJupiterVersion}"
+    testRuntime "org.junit.jupiter:junit-jupiter-engine:${junitJupiterVersion}"
+}
